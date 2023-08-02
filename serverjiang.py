@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 def push_ftqq(content):
-    resp = requests.post("https://sctapi.ftqq.com/SCT159684Tg85VBt6tqqqR0fEK6DhorT4Z.send",
+    resp = requests.post("https://sctapi.ftqq.com/API.send",
                   data={"text": "xray vuln alarm", "desp": content})
     if resp.json()["data"]["errno"] != 0:
         raise ValueError("push ftqq failed, %s" % resp.text)
