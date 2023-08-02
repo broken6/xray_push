@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def push_gotify(content):
     # 替换为你的 Gotify API 地址和 API Token
-    gotify_url = "http://101.42.9.79:666/message?token=AGWr1c47e8n2jYX"
+    gotify_url = "http://testserver:port/message?token=APItoken"
 
     data = {
         "message": content,
